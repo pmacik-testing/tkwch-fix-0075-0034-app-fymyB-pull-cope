@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-jdwp
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0034-tenant/tkwch-fix-0075-0034-app/devfile-sample-jdwp@sha256:2a7291d624bb18868b497d23323413137ec4d2e6e3ef69210bf0e77f06ef8052
+        name: my-nodejs
+        resources: {}
+status: {}
